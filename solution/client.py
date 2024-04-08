@@ -76,6 +76,10 @@ response = requests.delete(url + "/3")
 print(response.json())
 
 
+response = requests.get(url)
+print(response.json())
+
+print("Others")
 personaje = {
     "name":"Aragorn",
     "level":10,
@@ -86,12 +90,8 @@ personaje = {
 }
 response = requests.post(url, json=personaje, headers=headers)
 print(response.json())
-
-
 response = requests.get(url)
 print(response.json())
-
-
 
 
 
